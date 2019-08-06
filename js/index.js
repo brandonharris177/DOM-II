@@ -114,3 +114,14 @@ function mountainovr(e){
 }
 
 const islandBtn = document.getElementById("island-btn");
+
+const Body = document.querySelector('body');
+
+window.addEventListener("resize", function(){
+    // Body.style.display = 'none';
+    const gottaGo = document.createElement('p');
+    gottaGo.textContent = "They are messing with the screen Morty we gotta GO!!";
+    gottaGo.style.fontWeight = "bold";
+    gottaGo.style.fontSize = "10rem";
+    Body.prepend(gottaGo);
+});

@@ -33,7 +33,8 @@ function aboutClick(e){
     mysteryText.textContent = "YOU SHALL KNOW NOTHING ABOUT US!!!"
     nav.append(mysteryPic);
     nav.append(mysteryText);
-    const Text =  document.querySelectorAll("p");Text.style.display = "none";
+    const Text =  document.querySelectorAll("p");
+    Text.style.display = "none";
 }
 
 const blogBtn = document.getElementById("blog");
@@ -55,7 +56,7 @@ welcome.addEventListener('copy', multipy)
 
 function multipy(e){
     const more = document.createElement('p');
-    more.textContent = "More of me";
+    more.textContent = "Wubaluabadubdub!!!";
     more.style.fontWeight = "bold";
     more.style.fontSize = "4rem";
     intro.prepend(more);
@@ -91,7 +92,25 @@ function covePicLeave(e){
 }
 
 const funInSunBtn = document.getElementById("fun-in-sun");
+funInSunBtn.addEventListener('wheel', funScroll)
+
+function funScroll(e){
+    funInSunBtn.style.display = 'none';
+    // console.log(`Its Working!`)
+}
+
+const mountainDestination = document.getElementById("mountain-destination");
 
 const mountainBtn = document.getElementById("mountain-btn");
+mountainBtn.addEventListener('mouseover', mountainovr);
+
+function mountainovr(e){
+    mountainBtn.style.display = 'none';
+    const bebo = document.createElement('p');
+    bebo.textContent = "You wanna die Morty get in BEBO!";
+    bebo.style.fontWeight = "bold";
+    mountainDestination.append(bebo);
+    // console.log(`Its Working!`)
+}
 
 const islandBtn = document.getElementById("island-btn");

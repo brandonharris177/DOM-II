@@ -17,6 +17,8 @@ function homeClick(e){
     const goHome = document.createElement('a');
     goHome.textContent = "Go Home!";
     goHome.style.fontWeight = "bold";
+    goHome.href = "www.google.com";
+    homeBtn.style.display = "none";
     nav.prepend(goHome);
     e.stopPropagation();
 }
